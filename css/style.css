@@ -148,7 +148,7 @@ html body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 /*---Subtitulos---*/
@@ -168,7 +168,7 @@ html body {
     align-items: center;
     height: 70vh;
     grid-column-gap: 5rem;
-    padding: 5rem;
+    padding: 1rem;
 }
 
 .subtituloServicios {
@@ -301,7 +301,6 @@ html body {
     justify-content: center;
     align-items: center;
     height: 100px;
-    margin-top: 100px;
 }
 
 /*---Portfolio---*/
@@ -344,7 +343,11 @@ html body {
     color: #92AEB0;
     font-size: 1.1rem;
     font-family: 'Roboto', sans-serif;
-    margin-top: 20px;
+    margin-top: 10px;
+}
+
+.imagenPortfolio :hover{
+    height: 355px;
 }
 
 /*---Contacto---*/
@@ -428,8 +431,8 @@ html body {
 
     .subtituloParrafo {
         display: block;
-        margin-top: 30px;
-        margin-bottom: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .subtitulo {
@@ -445,8 +448,8 @@ html body {
 
     .subtituloLista {
         display: block;
-        margin-left: 15px;
-        margin-top: 15px;
+        margin-left: 10px;
+        margin-top: 10px;
     }
 
     .subtitulo2 {
@@ -455,7 +458,7 @@ html body {
     }
 
     .lista {
-        margin-left: 20px;
+        margin-left: 10px;
         margin-top: 10px;
     }
 
@@ -477,11 +480,10 @@ html body {
         justify-content: center;
         height: 210vh;
         width: 100%;
-        margin-bottom: 180px;
     }
 
     .subtituloServicios {
-        margin-bottom: 15px;
+        margin-bottom: 10px;
 
     }
 
@@ -520,7 +522,7 @@ html body {
     .cursosIniciales,
     .cursosAvanzados,
     .cursosEspeciales {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         margin-top: 10px;
     }
 
@@ -529,7 +531,7 @@ html body {
     }
 
     .parrafoCursos {
-        height: 60vh;
+        height: 80vh;
     }
 
     /*---Portfolio---*/
@@ -543,13 +545,12 @@ html body {
         display: grid;
         grid-template-columns: repeat(1, 280px);
         grid-template-rows: repeat(9, 280px);
-        height: 350vh;
-        margin-top: 30px;
+        height: 490vh;
         row-gap: 15px;
     }
 
     .parrafoPortfolio {
-        height: 70vh;
+        height: 50vh;
 
     }
 
@@ -568,7 +569,7 @@ html body {
     /*---Footer---*/
     .footer {
         display: block;
-        margin-top: -150px;
+        height: 100px;
         gap: 100px;
         font-size: 0.8rem;
 
@@ -590,7 +591,7 @@ html body {
 
     .subtituloParrafo {
         display: block;
-        margin-top: 30px;
+        margin-top: 10px;
     }
 
     .subtitulo {
@@ -618,7 +619,7 @@ html body {
 
     .subtituloImagen {
         display: block;
-        height: 115vh;
+        height: 125vh;
     }
 
     .subtituloServicios,
@@ -639,12 +640,12 @@ html body {
     .cursosIniciales,
     .cursosAvanzados,
     .cursosEspeciales {
-        margin-bottom: 30px;
         margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .parrafoCursos {
-        height: 50vh;
+        height: 60vh;
         margin-left: 8px;
         margin-right: 5px;
     }
@@ -660,7 +661,6 @@ html body {
         height: 150vh;
         align-items: center;
         justify-content: center;
-        margin-top: 60px;
     }
 
     .imagenPortfolio img {
@@ -690,7 +690,5 @@ html body {
 
     .footer {
         display: block;
-        margin-top: -110px;
-        margin-left: 50px;
     }
 }
