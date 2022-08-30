@@ -46,6 +46,10 @@ html body {
     color: #dfe8ff;
 }
 
+.navbar navbar-expand-lg{
+    background-color:#0a192f;
+}
+
 /*---Titulo e imagen principal---*/
 
 .tituloImagen {
