@@ -1,0 +1,22 @@
+{
+  "name": "fotografo-santiago_gonzalez-33025",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss":"node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Santiago4863/Cristian-Gonzalez-fotografia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Santiago4863/Cristian-Gonzalez-fotografia/issues"
+  },
+  "homepage": "https://github.com/Santiago4863/Cristian-Gonzalez-fotografia#readme"
+}
