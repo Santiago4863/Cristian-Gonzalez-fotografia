@@ -3,9 +3,20 @@ $colorFondo: #0a192f;
 $colorSecundario: #92AEB0;
 $colorDecoracion: #ebff05;
 
+@mixin size ($alto, $ancho) {
+    height: $alto;
+    width: $ancho;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    height: 100%;
-    width: 100%;
+    @include size(100%, 100%);
     background-color: $colorFondo;
 
 
@@ -56,75 +67,92 @@ body {
     }
 
     /*Index*/
-    main {
 
-        .tituloImagen {
-            background-image: url("../img/Foto\ Principal.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
-            height: 100vh;
+    $menu: (
+        /*mapa*/
+
+        uno: #92AEB0,
+        dos: #dfe8ff,
+        tres: #92AEB0,
+        cuatro: #dfe8ff,
+
+    );
+
+@each $item,
+$color in $menu {
+    .color-#{$item} {
+        background-color: $color
+    }
+}
+
+main {
+
+    .tituloImagen {
+        background-image: url("../img/Foto\ Principal.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .titulo {
+            color: $colorTitulo;
+            font-size: 4rem;
+            font-family: 'Red Hat Display', sans-serif;
+            text-shadow: $colorFondo 1px 2px;
             display: flex;
             justify-content: center;
             align-items: center;
-
-            .titulo {
-                color: $colorTitulo;
-                font-size: 4rem;
-                font-family: 'Red Hat Display', sans-serif;
-                text-shadow: $colorFondo 1px 2px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-            }
 
         }
 
-        .subtituloParrafo {
-            height: 325px;
-            width: 80%;
-            display: flex;
-            justify-content: center;
-            margin-left: 10%;
-            margin-right: 5%;
-            align-items: center;
-            gap: 10%;
+    }
 
-            .subtitulo {
-                color: $colorTitulo;
-                font-family: 'Red Hat Display', sans-serif;
-                font-size: 2.5rem;
-            }
+    .subtituloParrafo {
+        @include size(325px, 80%);
+        display: flex;
+        justify-content: center;
+        margin-left: 10%;
+        margin-right: 5%;
+        align-items: center;
+        gap: 10%;
 
-            .parrafo {
-                color: $colorSecundario;
-                font-size: 1.1rem;
-                font-family: 'Roboto', sans-serif;
-            }
+        .subtitulo {
+            color: $colorTitulo;
+            font-family: 'Red Hat Display', sans-serif;
+            font-size: 2.5rem;
         }
 
-        .subtituloLista {
-            height: 350px;
-            display: flex;
-            gap: 10%;
-            justify-content: center;
-            align-items: center;
-            margin-right: 5%;
-
-            .subtitulo2 {
-                color: $colorTitulo;
-                font-family: 'Red Hat Display', sans-serif;
-                font-size: 2.5rem;
-            }
-
-            .lista li {
-                color: $colorSecundario;
-                font-size: 1.1rem;
-                font-family: 'Roboto', sans-serif
-            }
+        .parrafo {
+            color: $colorSecundario;
+            font-size: 1.1rem;
+            font-family: 'Roboto', sans-serif;
         }
     }
+
+    .subtituloLista {
+        height: 350px;
+        display: flex;
+        gap: 10%;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5%;
+
+        .subtitulo2 {
+            color: $colorTitulo;
+            font-family: 'Red Hat Display', sans-serif;
+            font-size: 2.5rem;
+        }
+
+        .lista li {
+            color: $colorFondo;
+            font-size: 1.1rem;
+            font-family: 'Roboto', sans-serif
+        }
+    }
+}
 
 }
 
