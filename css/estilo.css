@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 body {
   height: 100%;
   width: 100%;
@@ -23,6 +28,14 @@ body {
       body header nav div div div .nav-link {
         color: #dfe8ff;
         font-family: 'Roboto', sans-serif; }
+  body .color-uno {
+    background-color: #92AEB0; }
+  body .color-dos {
+    background-color: #dfe8ff; }
+  body .color-tres {
+    background-color: #92AEB0; }
+  body .color-cuatro {
+    background-color: #dfe8ff; }
   body main .tituloImagen {
     background-image: url("../img/Foto Principal.jpg");
     background-repeat: no-repeat;
@@ -69,7 +82,7 @@ body {
       font-family: 'Red Hat Display', sans-serif;
       font-size: 2.5rem; }
     body main .subtituloLista .lista li {
-      color: #92AEB0;
+      color: #0a192f;
       font-size: 1.1rem;
       font-family: 'Roboto', sans-serif; }
 
