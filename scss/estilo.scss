@@ -65,96 +65,361 @@ body {
             }
         }
     }
+}
 
-    /*Index*/
+/*Index*/
 
-    $menu: (
-        /*mapa*/
+$menu: (
+    /*mapa*/
 
-        uno: #92AEB0,
-        dos: #dfe8ff,
-        tres: #92AEB0,
-        cuatro: #dfe8ff,
+    uno: #92AEB0,
+    dos: #dfe8ff,
+    tres: #92AEB0,
+    cuatro: #dfe8ff,
 
-    );
+);
 
 @each $item,
 $color in $menu {
     .color-#{$item} {
         background-color: $color
     }
-}
 
-main {
 
-    .tituloImagen {
-        background-image: url("../img/Foto\ Principal.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    main {
 
-        .titulo {
-            color: $colorTitulo;
-            font-size: 4rem;
-            font-family: 'Red Hat Display', sans-serif;
-            text-shadow: $colorFondo 1px 2px;
+        .tituloImagen {
+            background-image: url("../img/Foto\ Principal.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
 
+            .titulo {
+                color: $colorTitulo;
+                font-size: 4rem;
+                font-family: 'Red Hat Display', sans-serif;
+                text-shadow: $colorFondo 1px 2px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
         }
 
+        .subtituloParrafo {
+            @include size(325px, 80%);
+            display: flex;
+            justify-content: center;
+            margin-left: 10%;
+            margin-right: 5%;
+            align-items: center;
+            gap: 10%;
+
+            .subtitulo {
+                color: $colorTitulo;
+                font-family: 'Red Hat Display', sans-serif;
+                font-size: 2.5rem;
+            }
+
+            .parrafo {
+                color: $colorSecundario;
+                font-size: 1.1rem;
+                font-family: 'Roboto', sans-serif;
+            }
+        }
+
+        .subtituloLista {
+            height: 350px;
+            display: flex;
+            gap: 10%;
+            justify-content: center;
+            align-items: center;
+            margin-right: 5%;
+
+            .subtitulo2 {
+                color: $colorTitulo;
+                font-family: 'Red Hat Display', sans-serif;
+                font-size: 2.5rem;
+            }
+
+            .lista li {
+                color: $colorFondo;
+                font-size: 1.1rem;
+                font-family: 'Roboto', sans-serif
+            }
+        }
     }
 
-    .subtituloParrafo {
-        @include size(325px, 80%);
-        display: flex;
-        justify-content: center;
-        margin-left: 10%;
-        margin-right: 5%;
-        align-items: center;
-        gap: 10%;
+    /*Servicios*/
 
-        .subtitulo {
-            color: $colorTitulo;
-            font-family: 'Red Hat Display', sans-serif;
-            font-size: 2.5rem;
+    main {
+
+        section {
+
+            .tituloServicios {
+                color: $colorTitulo;
+                font-size: 4rem;
+                font-family: 'Red Hat Display', sans-serif;
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 1rem;
+
+            }
         }
 
-        .parrafo {
+        .serviciosMedia {
+            width: 100%;
+
+            .subtituloImagen {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas:
+                    "subtituloServicios imagenServicios"
+                    "parrafoServicios imagenServicios";
+                justify-content: center;
+                align-items: center;
+                height: 70vh;
+                grid-column-gap: 5rem;
+                padding: 1rem;
+
+                .subtituloServicios {
+                    color: $colorTitulo;
+                    font-family: 'Red Hat Display', sans-serif;
+                    font-size: 2.5rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    grid-area: subtituloServicios;
+                    margin-top: 2rem;
+                }
+
+                .parrafoServicios {
+                    grid-area: parrafoServicios;
+                    color: $colorSecundario;
+                    font-size: 1.1rem;
+                    font-family: 'Roboto', sans-serif;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 2rem;
+                }
+
+                .imagServicios {
+                    grid-area: imagenServicios;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .imagenServicios {
+                        border-radius: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    /*Cursos*/
+
+    main {
+
+        .flex {
+
+            .tituloCursos {
+                color: $colorTitulo;
+                font-size: 4rem;
+                font-family: 'Red Hat Display', sans-serif;
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 2rem;
+            }
+        }
+
+        .gridCursos {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "subtituloInicial subtituloAvanzado subtituloEspecial"
+                "cursoInicial cursoAvanzado cursoEspecial";
+            height: 40vh;
+
+            .subtituloInicial {
+                color: $colorTitulo;
+                font-family: 'Red Hat Display', sans-serif;
+                font-size: 2rem;
+                grid-area: subtituloInicial;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .cursosIniciales {
+                color: $colorSecundario;
+                font-size: 1.1rem;
+                font-family: 'Roboto', sans-serif;
+                grid-area: cursoInicial;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .subtituloAvanzado {
+                color: $colorTitulo;
+                font-family: 'Red Hat Display', sans-serif;
+                font-size: 2rem;
+                grid-area: subtituloAvanzado;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .cursosAvanzados {
+                color: $colorSecundario;
+                font-size: 1.1rem;
+                font-family: 'Roboto', sans-serif;
+                grid-area: cursoAvanzado;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .subtituloEspecial {
+                color: $colorTitulo;
+                font-family: 'Red Hat Display', sans-serif;
+                font-size: 2rem;
+                grid-area: subtituloEspecial;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .cursosEspeciales {
+                color: $colorSecundario;
+                font-size: 1.1rem;
+                font-family: 'Roboto', sans-serif;
+                grid-area: cursoEspecial;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .parrafoCursos {
             color: $colorSecundario;
             font-size: 1.1rem;
             font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
         }
     }
 
-    .subtituloLista {
-        height: 350px;
-        display: flex;
-        gap: 10%;
-        justify-content: center;
-        align-items: center;
-        margin-right: 5%;
+    main {
 
-        .subtitulo2 {
-            color: $colorTitulo;
-            font-family: 'Red Hat Display', sans-serif;
-            font-size: 2.5rem;
+        section {
+
+            .tituloPortfolio {
+                color: $colorTitulo;
+                font-size: 4rem;
+                font-family: 'Red Hat Display', sans-serif;
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 0.5rem;
+            }
         }
 
-        .lista li {
-            color: $colorFondo;
-            font-size: 1.1rem;
-            font-family: 'Roboto', sans-serif
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(3, 300px);
+            grid-template-rows: repeat(3, 300px);
+            row-gap: 30px;
+            column-gap: 75px;
+            align-items: center;
+            justify-content: center;
+
+            .imagenPortfolio {
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .imagenPortfolio :hover {
+                height: 355px;
+            }
+        }
+
+        section {
+
+            .parrafoPortfolio {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100px;
+                color: $colorSecundario;
+                font-size: 1.1rem;
+                font-family: 'Roboto', sans-serif;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    main {
+
+        section {
+
+            .tituloContacto {
+                color: $colorTitulo;
+                font-size: 4rem;
+                font-family: 'Red Hat Display', sans-serif;
+                height: 130px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 5px;
+
+            }
+        }
+
+        .contacto {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 55vh;
+
+            div {
+
+                .subtituloContacto {
+                    color: $colorTitulo;
+                    font-family: 'Red Hat Display', sans-serif;
+                    font-size: 2rem;
+                }
+
+                .parrafoContacto {
+                    color: $colorSecundario;
+                    font-size: 1.1rem;
+                    font-family: 'Roboto', sans-serif;
+                }
+            }
         }
     }
 }
 
-}
 
 /*Footer*/
 
