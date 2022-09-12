@@ -1,3 +1,4 @@
+/*variables*/
 $colorTitulo: #dfe8ff;
 $colorFondo: #0a192f;
 $colorSecundario: #92AEB0;
@@ -175,7 +176,8 @@ $color in $menu {
         }
 
         .serviciosMedia {
-            width: 100%;
+
+            @include size(230vh, 100%);
 
             .subtituloImagen {
                 display: grid;
@@ -226,8 +228,6 @@ $color in $menu {
         }
     }
 
-
-
     /*Cursos*/
 
     main {
@@ -253,7 +253,7 @@ $color in $menu {
             grid-template-areas:
                 "subtituloInicial subtituloAvanzado subtituloEspecial"
                 "cursoInicial cursoAvanzado cursoEspecial";
-            height: 40vh;
+            height: 55vh;
 
             .subtituloInicial {
                 color: $colorTitulo;
@@ -327,6 +327,8 @@ $color in $menu {
         }
     }
 
+    /*Portfolio*/
+
     main {
 
         section {
@@ -345,10 +347,10 @@ $color in $menu {
 
         .portfolio {
             display: grid;
-            grid-template-columns: repeat(3, 300px);
+            grid-template-columns: repeat(3, 250px);
             grid-template-rows: repeat(3, 300px);
             row-gap: 30px;
-            column-gap: 75px;
+            column-gap: 5px;
             align-items: center;
             justify-content: center;
 
@@ -378,6 +380,8 @@ $color in $menu {
             }
         }
     }
+
+    /*Contacto*/
 
     main {
 
@@ -443,6 +447,8 @@ $color in $menu {
 
 @media screen and (max-width: 480px) {
 
+    /*Index*/
+
     main {
 
         .tituloImagen {
@@ -492,6 +498,162 @@ $color in $menu {
         }
     }
 
+    /*Servicios*/
+
+    main {
+
+        section {
+
+            .tituloServicios {
+                font-size: 2.3rem;
+            }
+        }
+
+        .serviciosMedia {
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            align-items: center;
+            justify-content: center;
+            height: 210vh;
+            width: 100%;
+            @include size(210vh, 100%);
+
+            .subtituloImagen {
+                display: block;
+                align-items: center;
+                justify-content: center;
+
+
+                .subtituloServicios {
+                    margin-bottom: 10px;
+                    font-size: 1.8rem;
+
+                }
+
+                .imagenServicios {
+                    display: none;
+                }
+            }
+
+            .subtituloServicios {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    /*Cursos*/
+
+    main {
+
+        .flex {
+
+            .tituloCursos {
+                font-size: 2.3rem;
+            }
+        }
+
+        .gridCursos {
+            display: block;
+            height: 70vh;
+
+            .subtituloInicial {
+                font-size: 1.5rem;
+            }
+
+            .cursosIniciales {
+                margin-bottom: 10px;
+                margin-top: 10px;
+
+                .cursos {
+                    font-size: 1rem;
+                }
+            }
+
+            .subtituloAvanzado {
+                font-size: 1.5rem;
+            }
+
+            .cursosAvanzados {
+                margin-bottom: 10px;
+                margin-top: 10px;
+
+                .cursos {
+                    font-size: 1rem;
+                }
+            }
+
+            .subtituloEspecial {
+                font-size: 1.5rem;
+            }
+
+            .cursosEspeciales {
+                margin-bottom: 10px;
+                margin-top: 10px;
+
+                .cursos {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .parrafoCursos {
+            height: 80vh;
+        }
+
+    }
+
+    /*Portfolio*/
+
+    main {
+
+        section {
+
+            .tituloPortfolio {
+                font-size: 2.3rem;
+            }
+        }
+
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(1, 280px);
+            grid-template-rows: repeat(9, 280px);
+            height: 490vh;
+            row-gap: 15px;
+        }
+
+        section {
+
+            .parrafoPortfolio {
+                height: 50vh;
+
+            }
+        }
+    }
+
+    /*Contacto*/
+
+    main {
+
+        section {
+
+            .tituloContacto {
+                font-size: 2.3rem;
+            }
+        }
+
+        .contacto {
+            display: block;
+            height: 100vh;
+            margin-left: 8px;
+        }
+    }
+
+    /*Footer*/
+
     .contenedorFooter {
 
         .footer {
@@ -504,7 +666,11 @@ $color in $menu {
     }
 }
 
+/*Media queries Tablet*/
+
 @media screen and (min-width: 481px) and (max-width: 768px) {
+
+    /*Index*/
 
     main {
         .tituloImagen {
@@ -536,6 +702,108 @@ $color in $menu {
 
         }
     }
+
+    /*Servicios*/
+
+    main {
+
+        section {
+
+            .tituloServicios {
+                font-size: 2.3rem;
+            }
+        }
+
+        .serviciosMedia {
+
+            .subtituloImagen {
+                display: block;
+                height: 125vh;
+            }
+
+            .subtituloServicios {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    /*Cursos*/
+
+    main {
+
+        .gridCursos {
+            display: block;
+            height: 110vh;
+
+            .cursosIniciales {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            .cursosAvanzados {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            .cursosEspeciales {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+
+        .parrafoCursos {
+            height: 20vh;
+            margin-left: 8px;
+            margin-right: 5px;
+        }
+    }
+
+    /*Portfolio*/
+
+    main {
+
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(3, 150px);
+            grid-template-rows: repeat(3, 300px);
+            column-gap: 5px;
+            row-gap: 5px;
+            height: 150vh;
+            align-items: center;
+            justify-content: center;
+
+            .imagenPortfolio {
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        section {
+
+            .parrafoPortfolio {
+                height: 50vh;
+            }
+        }
+
+    }
+
+    /*Contacto*/
+
+    main {
+
+        .contacto {
+            display: block;
+            height: 90vh;
+            margin-left: 8px;
+        }
+    }
+
+    /*Footer*/
 
     .contenedorFooter {
         display: flex;

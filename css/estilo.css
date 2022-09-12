@@ -1,3 +1,4 @@
+/*variables*/
 * {
   margin: 0;
   padding: 0;
@@ -96,6 +97,7 @@ main section .tituloServicios {
   margin-top: 1rem; }
 
 main .serviciosMedia {
+  height: 230vh;
   width: 100%; }
   main .serviciosMedia .subtituloImagen {
     display: grid;
@@ -149,7 +151,7 @@ main .gridCursos {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "subtituloInicial subtituloAvanzado subtituloEspecial" "cursoInicial cursoAvanzado cursoEspecial";
-  height: 40vh; }
+  height: 55vh; }
   main .gridCursos .subtituloInicial {
     color: #dfe8ff;
     font-family: 'Red Hat Display', sans-serif;
@@ -208,6 +210,7 @@ main .parrafoCursos {
   align-items: center;
   height: 100px; }
 
+/*Portfolio*/
 main section .tituloPortfolio {
   color: #dfe8ff;
   font-size: 4rem;
@@ -220,10 +223,10 @@ main section .tituloPortfolio {
 
 main .portfolio {
   display: grid;
-  grid-template-columns: repeat(3, 300px);
+  grid-template-columns: repeat(3, 250px);
   grid-template-rows: repeat(3, 300px);
   row-gap: 30px;
-  column-gap: 75px;
+  column-gap: 5px;
   align-items: center;
   justify-content: center; }
   main .portfolio .imagenPortfolio img {
@@ -242,6 +245,7 @@ main section .parrafoPortfolio {
   font-family: 'Roboto', sans-serif;
   margin-top: 10px; }
 
+/*Contacto*/
 main section .tituloContacto {
   color: #dfe8ff;
   font-size: 4rem;
@@ -333,6 +337,7 @@ main section .tituloServicios {
   margin-top: 1rem; }
 
 main .serviciosMedia {
+  height: 230vh;
   width: 100%; }
   main .serviciosMedia .subtituloImagen {
     display: grid;
@@ -386,7 +391,7 @@ main .gridCursos {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "subtituloInicial subtituloAvanzado subtituloEspecial" "cursoInicial cursoAvanzado cursoEspecial";
-  height: 40vh; }
+  height: 55vh; }
   main .gridCursos .subtituloInicial {
     color: #dfe8ff;
     font-family: 'Red Hat Display', sans-serif;
@@ -445,6 +450,7 @@ main .parrafoCursos {
   align-items: center;
   height: 100px; }
 
+/*Portfolio*/
 main section .tituloPortfolio {
   color: #dfe8ff;
   font-size: 4rem;
@@ -457,10 +463,10 @@ main section .tituloPortfolio {
 
 main .portfolio {
   display: grid;
-  grid-template-columns: repeat(3, 300px);
+  grid-template-columns: repeat(3, 250px);
   grid-template-rows: repeat(3, 300px);
   row-gap: 30px;
-  column-gap: 75px;
+  column-gap: 5px;
   align-items: center;
   justify-content: center; }
   main .portfolio .imagenPortfolio img {
@@ -479,6 +485,7 @@ main section .parrafoPortfolio {
   font-family: 'Roboto', sans-serif;
   margin-top: 10px; }
 
+/*Contacto*/
 main section .tituloContacto {
   color: #dfe8ff;
   font-size: 4rem;
@@ -570,6 +577,7 @@ main section .tituloServicios {
   margin-top: 1rem; }
 
 main .serviciosMedia {
+  height: 230vh;
   width: 100%; }
   main .serviciosMedia .subtituloImagen {
     display: grid;
@@ -623,7 +631,7 @@ main .gridCursos {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "subtituloInicial subtituloAvanzado subtituloEspecial" "cursoInicial cursoAvanzado cursoEspecial";
-  height: 40vh; }
+  height: 55vh; }
   main .gridCursos .subtituloInicial {
     color: #dfe8ff;
     font-family: 'Red Hat Display', sans-serif;
@@ -682,6 +690,7 @@ main .parrafoCursos {
   align-items: center;
   height: 100px; }
 
+/*Portfolio*/
 main section .tituloPortfolio {
   color: #dfe8ff;
   font-size: 4rem;
@@ -694,10 +703,10 @@ main section .tituloPortfolio {
 
 main .portfolio {
   display: grid;
-  grid-template-columns: repeat(3, 300px);
+  grid-template-columns: repeat(3, 250px);
   grid-template-rows: repeat(3, 300px);
   row-gap: 30px;
-  column-gap: 75px;
+  column-gap: 5px;
   align-items: center;
   justify-content: center; }
   main .portfolio .imagenPortfolio img {
@@ -716,6 +725,7 @@ main section .parrafoPortfolio {
   font-family: 'Roboto', sans-serif;
   margin-top: 10px; }
 
+/*Contacto*/
 main section .tituloContacto {
   color: #dfe8ff;
   font-size: 4rem;
@@ -807,6 +817,7 @@ main section .tituloServicios {
   margin-top: 1rem; }
 
 main .serviciosMedia {
+  height: 230vh;
   width: 100%; }
   main .serviciosMedia .subtituloImagen {
     display: grid;
@@ -860,7 +871,7 @@ main .gridCursos {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "subtituloInicial subtituloAvanzado subtituloEspecial" "cursoInicial cursoAvanzado cursoEspecial";
-  height: 40vh; }
+  height: 55vh; }
   main .gridCursos .subtituloInicial {
     color: #dfe8ff;
     font-family: 'Red Hat Display', sans-serif;
@@ -919,6 +930,7 @@ main .parrafoCursos {
   align-items: center;
   height: 100px; }
 
+/*Portfolio*/
 main section .tituloPortfolio {
   color: #dfe8ff;
   font-size: 4rem;
@@ -931,10 +943,10 @@ main section .tituloPortfolio {
 
 main .portfolio {
   display: grid;
-  grid-template-columns: repeat(3, 300px);
+  grid-template-columns: repeat(3, 250px);
   grid-template-rows: repeat(3, 300px);
   row-gap: 30px;
-  column-gap: 75px;
+  column-gap: 5px;
   align-items: center;
   justify-content: center; }
   main .portfolio .imagenPortfolio img {
@@ -953,6 +965,7 @@ main section .parrafoPortfolio {
   font-family: 'Roboto', sans-serif;
   margin-top: 10px; }
 
+/*Contacto*/
 main section .tituloContacto {
   color: #dfe8ff;
   font-size: 4rem;
@@ -990,6 +1003,7 @@ main .contacto {
     font-family: 'Roboto', sans-serif; }
 
 @media screen and (max-width: 480px) {
+  /*Index*/
   main .tituloImagen {
     height: 40vh; }
     main .tituloImagen .titulo {
@@ -1018,13 +1032,89 @@ main .contacto {
       margin-top: 10px; }
       main .subtituloLista .lista li {
         font-size: 1.2rem; }
+  /*Servicios*/
+  main section .tituloServicios {
+    font-size: 2.3rem; }
+  main .serviciosMedia {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    height: 210vh;
+    width: 100%;
+    height: 210vh;
+    width: 100%; }
+    main .serviciosMedia .subtituloImagen {
+      display: block;
+      align-items: center;
+      justify-content: center; }
+      main .serviciosMedia .subtituloImagen .subtituloServicios {
+        margin-bottom: 10px;
+        font-size: 1.8rem; }
+      main .serviciosMedia .subtituloImagen .imagenServicios {
+        display: none; }
+    main .serviciosMedia .subtituloServicios {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+  /*Cursos*/
+  main .flex .tituloCursos {
+    font-size: 2.3rem; }
+  main .gridCursos {
+    display: block;
+    height: 70vh; }
+    main .gridCursos .subtituloInicial {
+      font-size: 1.5rem; }
+    main .gridCursos .cursosIniciales {
+      margin-bottom: 10px;
+      margin-top: 10px; }
+      main .gridCursos .cursosIniciales .cursos {
+        font-size: 1rem; }
+    main .gridCursos .subtituloAvanzado {
+      font-size: 1.5rem; }
+    main .gridCursos .cursosAvanzados {
+      margin-bottom: 10px;
+      margin-top: 10px; }
+      main .gridCursos .cursosAvanzados .cursos {
+        font-size: 1rem; }
+    main .gridCursos .subtituloEspecial {
+      font-size: 1.5rem; }
+    main .gridCursos .cursosEspeciales {
+      margin-bottom: 10px;
+      margin-top: 10px; }
+      main .gridCursos .cursosEspeciales .cursos {
+        font-size: 1rem; }
+  main .parrafoCursos {
+    height: 80vh; }
+  /*Portfolio*/
+  main section .tituloPortfolio {
+    font-size: 2.3rem; }
+  main .portfolio {
+    display: grid;
+    grid-template-columns: repeat(1, 280px);
+    grid-template-rows: repeat(9, 280px);
+    height: 490vh;
+    row-gap: 15px; }
+  main section .parrafoPortfolio {
+    height: 50vh; }
+  /*Contacto*/
+  main section .tituloContacto {
+    font-size: 2.3rem; }
+  main .contacto {
+    display: block;
+    height: 100vh;
+    margin-left: 8px; }
+  /*Footer*/
   .contenedorFooter .footer {
     display: block;
     height: 100px;
     gap: 100px;
     font-size: 0.8rem; } }
 
+/*Media queries Tablet*/
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  /*Index*/
   main .tituloImagen {
     height: 95vh; }
   main .subtituloParrafo {
@@ -1041,6 +1131,54 @@ main .contacto {
       margin-bottom: 10px; }
     main .subtituloLista .lista {
       margin-left: 35px; }
+  /*Servicios*/
+  main section .tituloServicios {
+    font-size: 2.3rem; }
+  main .serviciosMedia .subtituloImagen {
+    display: block;
+    height: 125vh; }
+  main .serviciosMedia .subtituloServicios {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  /*Cursos*/
+  main .gridCursos {
+    display: block;
+    height: 110vh; }
+    main .gridCursos .cursosIniciales {
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    main .gridCursos .cursosAvanzados {
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    main .gridCursos .cursosEspeciales {
+      margin-top: 10px;
+      margin-bottom: 10px; }
+  main .parrafoCursos {
+    height: 20vh;
+    margin-left: 8px;
+    margin-right: 5px; }
+  /*Portfolio*/
+  main .portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 300px);
+    column-gap: 5px;
+    row-gap: 5px;
+    height: 150vh;
+    align-items: center;
+    justify-content: center; }
+    main .portfolio .imagenPortfolio img {
+      width: 100%;
+      object-fit: cover; }
+  main section .parrafoPortfolio {
+    height: 50vh; }
+  /*Contacto*/
+  main .contacto {
+    display: block;
+    height: 90vh;
+    margin-left: 8px; }
+  /*Footer*/
   .contenedorFooter {
     display: flex;
     align-items: center;
