@@ -70,7 +70,7 @@ main .subtituloParrafo {
     font-family: 'Roboto', sans-serif; }
 
 main .subtituloLista {
-  height: 350px;
+  height: 150px;
   display: flex;
   gap: 10%;
   justify-content: center;
@@ -230,10 +230,9 @@ main .portfolio {
   align-items: center;
   justify-content: center; }
   main .portfolio .imagenPortfolio img {
-    width: 100%;
+    width: 250px;
+    height: 300px;
     object-fit: cover; }
-  main .portfolio .imagenPortfolio :hover {
-    height: 355px; }
 
 main section .parrafoPortfolio {
   display: flex;
@@ -268,7 +267,10 @@ main .contacto {
   main .contacto div .parrafoContacto {
     color: #92AEB0;
     font-size: 1.1rem;
-    font-family: 'Roboto', sans-serif; }
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none; }
+  main .contacto div .parrafoContacto:hover {
+    color: #ebff05; }
 
 .color-dos {
   background-color: #dfe8ff; }
@@ -310,7 +312,7 @@ main .subtituloParrafo {
     font-family: 'Roboto', sans-serif; }
 
 main .subtituloLista {
-  height: 350px;
+  height: 150px;
   display: flex;
   gap: 10%;
   justify-content: center;
@@ -470,10 +472,9 @@ main .portfolio {
   align-items: center;
   justify-content: center; }
   main .portfolio .imagenPortfolio img {
-    width: 100%;
+    width: 250px;
+    height: 300px;
     object-fit: cover; }
-  main .portfolio .imagenPortfolio :hover {
-    height: 355px; }
 
 main section .parrafoPortfolio {
   display: flex;
@@ -508,7 +509,10 @@ main .contacto {
   main .contacto div .parrafoContacto {
     color: #92AEB0;
     font-size: 1.1rem;
-    font-family: 'Roboto', sans-serif; }
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none; }
+  main .contacto div .parrafoContacto:hover {
+    color: #ebff05; }
 
 .color-tres {
   background-color: #92AEB0; }
@@ -550,7 +554,7 @@ main .subtituloParrafo {
     font-family: 'Roboto', sans-serif; }
 
 main .subtituloLista {
-  height: 350px;
+  height: 150px;
   display: flex;
   gap: 10%;
   justify-content: center;
@@ -710,10 +714,9 @@ main .portfolio {
   align-items: center;
   justify-content: center; }
   main .portfolio .imagenPortfolio img {
-    width: 100%;
+    width: 250px;
+    height: 300px;
     object-fit: cover; }
-  main .portfolio .imagenPortfolio :hover {
-    height: 355px; }
 
 main section .parrafoPortfolio {
   display: flex;
@@ -748,7 +751,10 @@ main .contacto {
   main .contacto div .parrafoContacto {
     color: #92AEB0;
     font-size: 1.1rem;
-    font-family: 'Roboto', sans-serif; }
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none; }
+  main .contacto div .parrafoContacto:hover {
+    color: #ebff05; }
 
 .color-cuatro {
   background-color: #dfe8ff; }
@@ -790,7 +796,7 @@ main .subtituloParrafo {
     font-family: 'Roboto', sans-serif; }
 
 main .subtituloLista {
-  height: 350px;
+  height: 150px;
   display: flex;
   gap: 10%;
   justify-content: center;
@@ -950,10 +956,9 @@ main .portfolio {
   align-items: center;
   justify-content: center; }
   main .portfolio .imagenPortfolio img {
-    width: 100%;
+    width: 250px;
+    height: 300px;
     object-fit: cover; }
-  main .portfolio .imagenPortfolio :hover {
-    height: 355px; }
 
 main section .parrafoPortfolio {
   display: flex;
@@ -988,7 +993,10 @@ main .contacto {
   main .contacto div .parrafoContacto {
     color: #92AEB0;
     font-size: 1.1rem;
-    font-family: 'Roboto', sans-serif; }
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none; }
+  main .contacto div .parrafoContacto:hover {
+    color: #ebff05; }
 
 /*Footer*/
 .contenedorFooter .footer {
@@ -1002,6 +1010,7 @@ main .contacto {
     font-size: 1.1rem;
     font-family: 'Roboto', sans-serif; }
 
+/*Mobile*/
 @media screen and (max-width: 480px) {
   /*Index*/
   main .tituloImagen {
@@ -1012,7 +1021,7 @@ main .contacto {
     display: block;
     margin-top: 10px;
     margin-bottom: 10px;
-    height: 85vh; }
+    height: 60vh; }
     main .subtituloParrafo .subtitulo {
       margin-bottom: 10px;
       font-size: 1.5rem; }
@@ -1022,7 +1031,8 @@ main .contacto {
   main .subtituloLista {
     display: block;
     margin-left: 10px;
-    margin-top: 30px; }
+    margin-top: 30px;
+    height: 25vh; }
     main .subtituloLista .subtitulo2 {
       margin-left: 15px;
       font-size: 1.5rem;
@@ -1041,8 +1051,6 @@ main .contacto {
     grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
     justify-content: center;
-    height: 210vh;
-    width: 100%;
     height: 210vh;
     width: 100%; }
     main .serviciosMedia .subtituloImagen {
@@ -1086,7 +1094,7 @@ main .contacto {
       main .gridCursos .cursosEspeciales .cursos {
         font-size: 1rem; }
   main .parrafoCursos {
-    height: 80vh; }
+    height: 25vh; }
   /*Portfolio*/
   main section .tituloPortfolio {
     font-size: 2.3rem; }
@@ -1094,21 +1102,21 @@ main .contacto {
     display: grid;
     grid-template-columns: repeat(1, 280px);
     grid-template-rows: repeat(9, 280px);
-    height: 490vh;
+    height: 390vh;
     row-gap: 15px; }
   main section .parrafoPortfolio {
-    height: 50vh; }
+    height: 40vh; }
   /*Contacto*/
   main section .tituloContacto {
     font-size: 2.3rem; }
   main .contacto {
     display: block;
-    height: 100vh;
+    height: 40vh;
     margin-left: 8px; }
   /*Footer*/
   .contenedorFooter .footer {
     display: block;
-    height: 100px;
+    height: 90px;
     gap: 100px;
     font-size: 0.8rem; } }
 
@@ -1144,7 +1152,7 @@ main .contacto {
   /*Cursos*/
   main .gridCursos {
     display: block;
-    height: 110vh; }
+    height: 100vh; }
     main .gridCursos .cursosIniciales {
       margin-top: 10px;
       margin-bottom: 10px; }
@@ -1155,7 +1163,7 @@ main .contacto {
       margin-top: 10px;
       margin-bottom: 10px; }
   main .parrafoCursos {
-    height: 20vh;
+    height: 5vh;
     margin-left: 8px;
     margin-right: 5px; }
   /*Portfolio*/
@@ -1165,7 +1173,7 @@ main .contacto {
     grid-template-rows: repeat(3, 300px);
     column-gap: 5px;
     row-gap: 5px;
-    height: 150vh;
+    height: 120vh;
     align-items: center;
     justify-content: center; }
     main .portfolio .imagenPortfolio img {
@@ -1175,8 +1183,7 @@ main .contacto {
     height: 50vh; }
   /*Contacto*/
   main .contacto {
-    display: block;
-    height: 90vh;
+    height: 50vh;
     margin-left: 8px; }
   /*Footer*/
   .contenedorFooter {
